@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ek Khaas Khat 💌</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background Music -->
+  <audio autoplay loop id="bg-music">
+    <source src="https://cdn.pixabay.com/audio/2022/10/30/audio_bdf9d6e963.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Music Toggle -->
+  <div id="musicControl">
+    <button onclick="toggleMusic()">🔈</button>
+  </div>
+
+  <!-- NAME INPUT -->
+  <div id="namePrompt" class="centered">
+    <h2 class="intro-title">Apna naam daalo ❤️</h2>
+    <input type="text" id="nameInput" placeholder="Tumhara naam..." />
+    <button onclick="checkName()">Open Letter</button>
+    <p id="error" class="error"></p>
+  </div>
+
+  <!-- LETTER -->
+  <div id="letterBox" class="hidden fade-in">
+    <h1 class="envelope-text">Tumhare liye ek khaas khat 💌</h1>
+    <div class="letter-wrapper">
+      <img src="scroll.png" class="scroll-bg" alt="Scroll Background" />
+      <div class="letter-content" id="typewriterText"></div>
+      <img src="feather.png" alt="Feather Pen" id="feather" />
+    </div>
+    <div id="loveTimer" class="hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
